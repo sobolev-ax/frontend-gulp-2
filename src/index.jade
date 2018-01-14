@@ -1,0 +1,77 @@
+include template/header
+.container.container-full-height
+    .element.element-toy
+    .element.element-place
+        .element-place-correction
+            .element.element-place-moon
+            .element.element-place-spruce
+        .element-place-correction
+            .element.element-place-star
+            .element.element-place-star
+            .element.element-place-star
+        .element-place-correction
+            .element.element-place-snow
+            .element.element-place-hand
+    .container-half.container-full-height.container-left.container-center
+        .container-full-height-item
+            h1.header.header-big.header-red Дед Мороз <br /> и Снегурочка
+        .container-full-height-item
+            a(  href="./order.html" 
+                title="Заказать персонажа"
+                class="button button-oval button-oval-red") Заказать персонажа
+.background.background-left-top
+    .container
+        .container-grid.container-grid-center
+            h3.header.header-big.header-purple Наши преимущества
+        .container-grid.container-grid-center.container-grid-center-between.spy
+            +card("advantage1.png", "Индивидуальный подход", "animation animation-fadeInLeft")
+            +card("advantage2.png", "Низкие цены", "animation animation-fadeInLeft")
+            +card("advantage3.png", "Опытные аниматоры", "animation animation-fadeInLeft")
+            +card("advantage4.png", "Профессиональные костюмы", "animation animation-fadeInLeft")
+.container
+    .container-grid.container-grid-center
+        h3.header.header-big.header-purple Этапы работы
+    .container-grid.container-grid-center.spy
+        +ball("Вы оставляете заявку на сайте", "animation")
+        +ball("Мы с вами связываемся назначаем дату и время", "animation")
+        +ball("Сказка приезжает в назначенный час", "animation")
+.background.background-center
+    .container
+      .container-grid.container-grid-center
+          h3.header.header-big.header-purple Отзывы
+      .container-grid.container-grid-center.spy
+          +review(
+            "avatar1.jpg",
+             "У аниматоров в запасе веселые игры для всех возрастов и всегда позитивный настрой которым они делятся без остатка! Теперь наша семья и наши друзья не представляют праздника без этих замечательных людей!", 
+             "Алексей, Екатерина и Ксюша",
+             "animation animation-fadeInLeft")
+          +review(
+            "avatar2.jpg",
+             "Вот уже второй год вызываем у вас дед мороза и внучку снегурочку. Хотим сказать больше спасибо и в этом году. Очень красивые у вас костюмы и отличные аниматоры. Спасибо!", 
+             "Светлана",
+             "animation animation-fadeInLeft")
+          +review(
+            "avatar3.jpg",
+             "Заказываем здесь Дедушку Мороза и Снегурочку уже 3й год. Аниматоры каждый год приносят нам настоящую сказку и супер Новгоднее настроение! Отличный сценарий, с играми, песнями, загадками. Дети в восторге, рекомендуем друзьям. Большое спасибо! ", 
+             "Наталья и Олег",
+             "animation animation-fadeInLeft")
+.background.background-gradient
+  .container.container-right.container-minHeight
+    .element.element-bottle
+    .element.element-place2
+      .element.element-place2-spruce
+      .element.element-place2-snow
+    .container-minHeight-item
+      h4.header.header-small.header-white.header-fireWork Дед Мороз и Снегурочка <br /> в Нижнем Новгороде
+    .container-minHeight-item
+      a(href="./order.html" 
+        title="Заказать персонажа"
+        class="button button-oval button-oval-purple") Заказать персонажа
+    .container-minHeight-item
+      p.linkText.linkText-white По всем вопросам:
+      a(href="tel:8(905)664-44-94" 
+        title="Позвонить: 8 (905) 664-44-94"
+        class="link link-white") +7 (905) 664 44 94
+.overlay
+
+include template/footer

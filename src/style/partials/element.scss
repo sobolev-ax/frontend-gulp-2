@@ -1,0 +1,162 @@
+.element {
+    position: absolute;
+    &-portret {
+        transform: scale(2);
+    }
+    &-toy {
+        background: url("../images/toy.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 60px;
+        height: 120px;
+        left: -100px;
+        animation: toy 3s ease alternate infinite;
+        transform-origin: top center;
+    }
+    &-place {
+        z-index: 1;
+        width: 560px;
+        height: 1000px;
+        right: -50px;
+        top: -120px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 50% 30%;
+        border-bottom-right-radius: 50% 30%;
+        transform: rotate(13deg);
+        pointer-events: none;
+        overflow: hidden;
+        background: linear-gradient( 45deg, rgb(9,27,92) 0%, rgb(109,17,121) 72%);
+        box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.13);
+        &-correction {
+            transform: rotate(-13deg);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+        &-snow {
+            height: 100%;
+            width: 100%;
+            animation: fadeIn 7s 1s ease both, snow 20s linear infinite;
+            background-image:
+                url("../images/Sneg-New-Year-1.png"),
+                url("../images/Sneg-New-Year-2.png"),
+                url("../images/Sneg-New-Year-3.png");
+        }
+        &-spruce {
+            height: 100%;
+            width: 100%;
+            background-image: url("../images/spruce.png");
+            background-size: 400px auto;
+            background-position-y: 110%;
+            background-position-x: 50%;
+            background-repeat: no-repeat;
+        }
+        &-moon {
+            height: 100%;
+            width: 100%;
+            background-image: url("../images/moon.png");
+            background-size: 400px auto;
+            background-position-y: 100%;
+            background-position-x: 100%;
+            background-repeat: no-repeat;
+        }
+        &-star {
+            width: 0px;
+            height: 0px;
+            border-right:  100px solid transparent;
+            border-bottom: 70px  solid $colorStar1;
+            border-left:   100px solid transparent;
+            transform:    rotate(35deg) scale(.3);
+            animation: star 2s infinite alternate linear;
+            &:before {
+                border-bottom: 80px solid $colorStar2;
+                border-left: 30px solid transparent;
+                border-right: 30px solid transparent;
+                height: 0;
+                width: 0;
+                margin-top: -45px;
+                margin-left: -65px;
+                display: block;
+                content: '';
+                transform: rotate(-35deg);
+                animation: star 1s infinite alternate linear;
+            }
+            &:after {
+                display: block;
+                margin-top: -33px;
+                margin-left: -105px;
+                width: 0px;
+                height: 0px;
+                border-right: 100px solid transparent;
+                border-bottom: 70px solid $colorStar3;
+                border-left: 100px solid transparent;
+                transform: rotate(-70deg);
+                content: '';
+                animation: star 1.5s infinite alternate linear;
+            }
+            &:nth-child(1) {
+                left: 82px;
+                top: 362px;
+            }
+            &:nth-child(2) {
+                left: 137px;
+                top: 623px;
+            }
+            &:nth-child(3) {
+                left: 251px;
+                top: 473px;
+            }
+        }
+        &-hand {
+            background-image: url(../images/hand.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            bottom: 0;
+            height: 210px;
+            width: 90px;
+            margin-left: -90px;
+            left: 50%;
+            animation: hand 2s ease alternate infinite both;
+            transform-origin: bottom center;
+        }
+    }
+    &-place2 {
+      z-index: 1;
+      left: 0;
+      bottom: 0;
+      height: 550px;
+      width: 600px;
+      pointer-events: none;
+      overflow: hidden;
+      &-snow {
+          height: 100%;
+          width: 100%;
+          animation: fadeIn 7s 1s ease both, snow 20s linear infinite;
+          background-image:
+              url("../images/Sneg-New-Year-1.png"),
+              url("../images/Sneg-New-Year-2.png"),
+              url("../images/Sneg-New-Year-3.png");
+      }
+      &-spruce {
+          height: 100%;
+          width: 100%;
+          background-image: url("../images/spruce2.png");
+          background-size: contain;
+          background-position-y: 110%;
+          background-position-x: 50%;
+          background-repeat: no-repeat;
+      }
+    }
+    &-bottle {
+      background-image: url(../images/bottle.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      top: -650px;
+      right: -727px;
+      height: 739px;
+      width: 727px;
+    }
+}

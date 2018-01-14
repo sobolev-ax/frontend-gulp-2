@@ -1,0 +1,46 @@
+.header {
+    font-family: "opensans-extrabold";
+    line-height: 1.2;
+    &-big {
+        font-size: 72px;
+    }
+    &-medium {
+        font-size: 54px;
+        transform: matrix( 1.33396387001571,0,0,1.33396387001571,0,0);
+    }
+    &-small {
+        font-size: 48px;
+    }
+    &-small2 {
+        font-size: 20px;
+    }
+    &-red {
+        color: $colorHeaderRed;
+    }
+    &-purple {
+        color: $colorHeaderPurple;
+    }
+    &-white {
+        color: $colorHeaderWhite;
+    }
+    &-thin {
+      font-family: "opensans-bold";
+    }
+    &-fireWork {
+      position: relative;
+      display: inline-block;
+      z-index: 1;
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 118px;
+        height: 105px;
+        left: -60px;
+        bottom: -80px;
+        background: url(../images/firework.png) no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+    }
+}

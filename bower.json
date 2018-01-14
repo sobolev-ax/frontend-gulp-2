@@ -1,0 +1,35 @@
+{
+  "name": "frontend-gulp",
+  "description": "Простая и быстрая сборка frontend проекта с помощь gulp",
+  "main": "index.js",
+  "authors": [
+    "sobolev_ax"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/sobolev-ax/frontend-gulp",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*",
+    "themify-icons": "^0.1.2"
+  },
+  "devDependencies": {
+    "ie-classlist": "^1.1.20170427",
+    "scrollspy": "^0.1.3",
+    "fotorama": "^4.6.4",
+    "bootstrap": "^3.3.7",
+    "imgLiquid": "^0.9.944",
+    "bootstrap-datepicker": "^1.7.1",
+    "air-datepicker": "^2.2.3",
+    "bootstrap-select": "^1.12.4",
+    "reset-css": "^2.2.1",
+    "scroll-js": "scroll#^1.8.8",
+    "jQuery-viewport-checker": "^1.8.8"
+  }
+}

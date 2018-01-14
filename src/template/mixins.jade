@@ -1,0 +1,94 @@
+- var cardCount = 0
+mixin card(img, text, classes)
+    .card(class= classes)
+        .card-img(
+            style="background-image: url(./images/" + img + ")"
+        )
+        .card-text= text
+    -if ( ++cardCount == 3) {
+        .card-hand.animationNoDelay
+    -}
+
+- var ballCount = 0;
+mixin ball(text, classes)
+    .ball(class= classes)= text
+        .ball-nomer= ++ballCount
+
+mixin review(img, text, name, classes)
+    .review(
+        class="#{classes}"
+      )
+        .review-img(
+            style="background-image: url(./images/" + img + ")"
+        )
+        .review-text
+            .review-text-name= name
+            .review-text-text= text
+
+
+mixin radioText(name, value, title, selected, clickBlock, clickItem)
+    input(
+        checked=(selected ? "checked" : undefined)
+        data-click-block=(clickBlock ? value : undefined)
+        data-click-item=(clickItem ? value : undefined)
+        type="radio"
+        name= name 
+        value= value 
+        id="#{name}#{value}"
+        class="radio radio-forText"
+    )
+    label(
+        for="#{name}#{value}"
+        class="label label-text"
+    )= title
+
+mixin radioColor(name, value, color, selected)
+    input(
+        checked=(selected ? "checked" : undefined)
+        type="radio"
+        name= name 
+        value= value 
+        id="#{name}#{value}"
+        data-color= value
+        class="radio radio-forColor"
+    )
+    label(
+        for="#{name}#{value}"
+        class="label label-color"
+        style="background-color: #{color}"
+    )
+
+mixin filterBlock(level1, level2)
+    div(
+        data-filter-level1=(level1 ? level1 : undefined)
+        data-filter-level2=(level2 ? level2 : undefined)
+    )
+        if block
+            block
+        else
+            p is empty
+
+mixin radioImage(adult, image, width, height, x, y, name, value, selected)
+    input(
+        checked=(selected ? "checked" : undefined)
+        type="radio"
+        name= name 
+        value= value 
+        id="#{name}#{value}"
+        class="radio radio-forImage"
+    )
+    label(
+        data-click-image="#{name}#{value}"
+        data-click-image-name="#{name}"
+        for="#{name}#{value}"
+        class="label label-image container-columns-item-child-row-line"
+        style="background-image: url(./images/#{image}); width: #{width}; height: #{height};     background-position-x: #{x}; background-position-y: #{y};"
+        data-filter-item=(adult ? "Adult" : "Child")
+    )
+
+mixin image(image, width, height, x, y, name, value, coordx, coordy)
+    .element.element-portret(
+        data-image-name= name 
+        data-image-value="#{name}#{value}"
+        style="background-image: url(./images/#{image}); width: #{width}; height: #{height};     background-position-x: #{x}; background-position-y: #{y}; left: #{coordx}; top: #{coordy};"
+    )

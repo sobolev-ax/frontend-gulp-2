@@ -1,0 +1,384 @@
+include template/header
+.background.background-gradient
+  .container.container-right.container-minHeight.container-minHeight-small
+    .container-minHeight-item
+      a(href="#"
+        data-open="enter"
+        title="Личный Кабинет"
+        class="link link-white link-smaller") Войти
+      span.linkText.linkText-white.linkText-smaller &nbsp;/&nbsp;
+      a(href="#" 
+        title="Пройти Регистрацию"
+        class="link link-white link-smaller") Регистрация
+form(action="#" method="POST")
+  .overlay(data-popup="portret")
+    .popup
+      .container-columns-item-child
+        h4.header.header-thin.header-purple.header-small2 Ваш Персонаж
+      .container-columns-item-child
+        .container-portret
+          +image("Дед-мороз-белый-толстый.png", "206px", "300px", "5px", "-22px", "FatherFrost", "TallWhite", "100px", "150px")
+          +image("Дед-мороз-белый-худой.png", "206px", "300px", "-4px", "-8px", "FatherFrost", "ThinWhite", "100px", "150px")
+          +image("Дед-мороз-черный-толстый.png", "206px", "300px", "5px", "-22px", "FatherFrost", "TallBlack", "100px", "150px")
+          +image("Дед-мороз-черный-худой.png", "206px", "300px", "-5px", "-19px", "FatherFrost", "ThinBlack", "100px", "150px")
+
+          +image("Снегурочка-белая-толстая.png", "196px", "300px", "-15px", "-24px", "SnowMaiden", "TallWhite", "100px", "150px")
+          +image("Снегурочка-белая-худая.png", "196px", "300px", "-15px", "-24px", "SnowMaiden", "ThinWhite", "100px", "150px")
+          +image("Снегурочка-черная-толстая.png", "196px", "300px", "-15px", "-24px", "SnowMaiden", "TallBlack", "100px", "150px")
+          +image("Снегурочка-черная-худая.png", "196px", "300px", "-15px", "-24px", "SnowMaiden", "ThinBlack", "100px", "150px")
+
+          // 1
+          +image("Дед-мороз-белый-толстый.png", "176px", "200px", "-583px", "-308px", "FatherFrostTallClothing", "1", "124px", "210px")
+          +image("Дед-мороз-белый-толстый.png", "105px", "200px", "-751px", "-303px", "FatherFrostTallClothing", "2", "153px", "210px")
+          +image("Дед-мороз-белый-толстый.png", "79px", "200px", "-854px", "-303px", "FatherFrostTallClothing", "3", "168px", "203px")
+          +image("Дед-мороз-белый-толстый.png", "158px", "210px", "-934px", "-326px", "FatherFrostTallClothing", "4", "129px", "255px")
+
+          +image("Дед-мороз-белый-худой.png", "176px", "200px", "-583px", "-308px", "FatherFrostThinClothing", "1", "103px", "190px")
+          +image("Дед-мороз-белый-худой.png", "105px", "200px", "-751px", "-303px", "FatherFrostThinClothing", "2", "133px", "180px")
+          +image("Дед-мороз-белый-худой.png", "79px", "200px", "-854px", "-303px", "FatherFrostThinClothing", "3", "158px", "183px")
+          +image("Дед-мороз-белый-худой.png", "158px", "210px", "-934px", "-326px", "FatherFrostThinClothing", "4", "129px", "255px")
+
+          +image("Снегурочка-белая-толстая.png", "126px", "200px", "-643px", "-308px", "SnowMaidenTallClothing", "1",  "154px", "220px")
+          +image("Снегурочка-белая-толстая.png", "112px", "170px", "-758px", "-308px", "SnowMaidenTallClothing", "2",  "157px", "200px")
+          +image("Снегурочка-белая-толстая.png", "131px", "200px", "-884px", "-308px", "SnowMaidenTallClothing", "3",  "154px", "230px")
+          +image("Снегурочка-белая-толстая.png", "116px", "200px", "-643px", "-501px", "SnowMaidenTallClothing", "4",  "140px", "273px")
+          +image("Снегурочка-белая-толстая.png", "122px", "190px", "-758px", "-481px", "SnowMaidenTallClothing", "5",  "144px", "260px")
+
+          +image("Снегурочка-белая-худая.png", "126px", "200px", "-393px", "-468px", "SnowMaidenThinClothing", "1",  "154px", "230px")
+          +image("Снегурочка-белая-худая.png", "112px", "170px", "-508px", "-478px", "SnowMaidenThinClothing", "2",  "144px", "200px")
+          +image("Снегурочка-белая-худая.png", "131px", "200px", "-884px", "-468px", "SnowMaidenThinClothing", "3",  "134px", "240px")
+          +image("Снегурочка-белая-худая.png", "116px", "200px", "-633px", "-468px", "SnowMaidenThinClothing", "4",  "154px", "240px")
+          +image("Снегурочка-белая-худая.png", "122px", "190px", "-778px", "-468px", "SnowMaidenThinClothing", "5",  "150px", "260px")
+
+          // 2
+          +image("Дед-мороз-белый-толстый.png", "56px", "88px", "-23px", "-358px", "FatherFrostBeard", "1", "184px", "166px")
+          +image("Дед-мороз-белый-толстый.png", "56px", "88px", "-85px", "-358px", "FatherFrostBeard", "2", "178px", "166px")
+          +image("Дед-мороз-белый-толстый.png", "56px", "88px", "-140px", "-358px", "FatherFrostBeard", "3", "178px", "166px")
+          +image("Дед-мороз-белый-толстый.png", "56px", "88px", "-189px", "-358px", "FatherFrostBeard", "4", "181px", "149px")
+          +image("Дед-мороз-белый-толстый.png", "56px", "88px", "-239px", "-358px", "FatherFrostBeard", "5", "181px", "146px")
+
+          +image("Снегурочка-белая-худая.png", "64px", "119px", "-515px", "-368px", "SnowMaidenHair", "1", "178px", "105px")
+          +image("Снегурочка-белая-худая.png", "64px", "119px", "-595px", "-368px", "SnowMaidenHair", "2", "178px", "105px")
+          +image("Снегурочка-белая-худая.png", "64px", "119px", "-663px", "-368px", "SnowMaidenHair", "3", "178px", "105px")
+          +image("Снегурочка-белая-худая.png", "74px", "119px", "-729px", "-368px", "SnowMaidenHair", "4", "158px", "115px")
+
+          // 3
+          +image("Дед-мороз-белый-толстый.png", "56px", "298px", "-307px", "-330px", "FatherFrostAccessories", "1", "14px", "166px")
+          +image("Дед-мороз-белый-толстый.png", "86px", "298px", "-367px", "-330px", "FatherFrostAccessories", "2", "384px", "366px")
+          +image("Дед-мороз-белый-толстый.png", "49px", "298px", "-441px", "-330px", "FatherFrostAccessories", "3", "344px", "366px")
+          +image("Дед-мороз-белый-толстый.png", "76px", "298px", "-490px", "-330px", "FatherFrostAccessories", "4", "324px", "346px")
+
+          +image("Снегурочка-белая-худая.png", "64px", "180px", "-45px", "-478px", "SnowMaidenAccessories", "1", "44px", "236px")
+          +image("Снегурочка-белая-худая.png", "64px", "180px", "-113px", "-478px", "SnowMaidenAccessories", "2", "354px", "136px")
+          +image("Снегурочка-белая-худая.png", "84px", "180px", "-193px", "-498px", "SnowMaidenAccessories", "3", "344px", "326px")
+          +image("Снегурочка-белая-худая.png", "64px", "180px", "-279px", "-478px", "SnowMaidenAccessories", "4", "324px", "336px")
+
+          // 4
+          +image("Дед-мороз-белый-толстый.png", "113px", "58px", "-35px", "-448px", "FatherFrostShoes", "1", "157px", "516px")
+          +image("Дед-мороз-белый-толстый.png", "113px", "58px", "-150px", "-448px", "FatherFrostShoes", "2", "147px", "516px")
+          +image("Дед-мороз-белый-толстый.png", "113px", "58px", "-30px", "-498px", "FatherFrostShoes", "3", "164px", "520px")
+          +image("Дед-мороз-белый-толстый.png", "113px", "58px", "-157px", "-498px", "FatherFrostShoes", "4", "164px", "520px")
+
+          +image("Снегурочка-белая-худая.png", "112px", "68px", "-55px", "-408px", "SnowMaidenShoes", "1", "157px", "466px")
+          +image("Снегурочка-белая-худая.png", "112px", "68px", "-169px", "-408px", "SnowMaidenShoes", "2", "157px", "466px")
+          +image("Снегурочка-белая-худая.png", "112px", "68px", "-285px", "-408px", "SnowMaidenShoes", "3", "164px", "461px")
+          +image("Снегурочка-белая-худая.png", "112px", "68px", "-395px", "-408px", "SnowMaidenShoes", "4", "144px", "450px")
+
+          // 5
+          +image("Дед-мороз-белый-толстый.png", "71px", "58px", "-32px", "-546px", "FatherFrostCap", "1", "180px", "10px" )
+          +image("Дед-мороз-белый-толстый.png", "71px", "58px", "-93px", "-546px", "FatherFrostCap", "2", "180px", "10px" )
+          +image("Дед-мороз-белый-толстый.png", "71px", "58px", "-158px", "-546px", "FatherFrostCap", "3", "180px", "10px" )
+          +image("Дед-мороз-белый-толстый.png", "71px", "58px", "-221px", "-546px", "FatherFrostCap", "4", "180px", "10px" )
+
+          +image("Снегурочка-белая-худая.png", "68px", "68px", "-55px", "-338px", "SnowMaidenCap", "1", "180px", "30px")
+          +image("Снегурочка-белая-худая.png", "68px", "68px", "-113px", "-338px", "SnowMaidenCap", "2", "180px", "30px")
+          +image("Снегурочка-белая-худая.png", "68px", "68px", "-172px", "-338px", "SnowMaidenCap", "3", "180px", "30px")
+          +image("Снегурочка-белая-худая.png", "68px", "68px", "-225px", "-338px", "SnowMaidenCap", "4", "180px", "30px")
+      .container-columns-item-child
+        input(type="text" name="name" placeholder="Имя")
+      .container-columns-item-child
+        input(type="text" name="surname" placeholder="Фамилия")
+      .container-columns-item-child
+        input(type="text" name="email" placeholder="email")
+      .container-columns-item-child
+        input(type="text" name="phone" placeholder="Телефон")
+      .container-columns-item-child
+        h4.header.header-thin.header-purple.header-small2 Адресс
+      .container-columns-item-child
+        input(type="text" name="street" placeholder="Улица")
+      .container-columns-item-child
+        input(type="text" name="home" placeholder="Дом")
+      .container-columns-item-child
+        input(type="text" name="room" placeholder="Квартира")
+      .container-columns-item-child
+        input(type="submit" value="Заказать" class="button button-oval button-oval-purple")
+    
+  .container.container-grid.container-grid-center
+    h1.header.header-purple.header-small Создание персонажа
+  .container.container-grid.container-columns
+
+    .container-columns-item.container-columns-item-25
+      .container-columns-item-child
+        h4.header.header-thin.header-purple.header-small2 Персонаж
+      .container-columns-item-child
+        +radioText("character", "FatherFrost", "Дед Мороз", true, true)
+      .container-columns-item-child
+        +radioText("character", "SnowMaiden", "Снегурочка", false, true)
+
+    .container-columns-item.container-columns-item-25
+      .container-columns-item-child
+        h4.header.header-thin.header-purple.header-small2 Телосложение
+      .container-columns-item-child
+        +radioText("body", "Tall", "Толстый", true, true)
+      .container-columns-item-child
+        +radioText("body", "Thin", "Худой", false, true)
+
+    .container-columns-item.container-columns-item-25
+      .container-columns-item-child
+        h4.header.header-thin.header-purple.header-small2 Праздник
+      .container-columns-item-child
+        +radioText("old", "Child", "Детский", true, false, true)
+      .container-columns-item-child
+        +radioText("old", "Adult", "Взрослый", false, false, true)
+
+    .container-columns-item.container-columns-item-25
+      .container-columns-item-child
+        h4.header.header-thin.header-purple.header-small2 Цвет кожи
+      .container-columns-item-child.container-columns-item-child-row
+        .container-columns-item-child-row-line
+          +radioColor("color", "White", "#f9d0b4", true)
+        .container-columns-item-child-row-line
+          +radioColor("color", "Black", "#513333")
+
+  .container.container-grid.container-columns
+    .container-columns-item.container-columns-item-75
+      .container-portret
+        +image("Дед-мороз-белый-толстый.png", "206px", "300px", "5px", "-22px", "FatherFrost", "TallWhite", "100px", "150px")
+        +image("Дед-мороз-белый-худой.png", "206px", "300px", "-4px", "-8px", "FatherFrost", "ThinWhite", "100px", "150px")
+        +image("Дед-мороз-черный-толстый.png", "206px", "300px", "5px", "-22px", "FatherFrost", "TallBlack", "100px", "150px")
+        +image("Дед-мороз-черный-худой.png", "206px", "300px", "-5px", "-19px", "FatherFrost", "ThinBlack", "100px", "150px")
+
+        +image("Снегурочка-белая-толстая.png", "196px", "300px", "-15px", "-24px", "SnowMaiden", "TallWhite", "100px", "150px")
+        +image("Снегурочка-белая-худая.png", "196px", "300px", "-15px", "-24px", "SnowMaiden", "ThinWhite", "100px", "150px")
+        +image("Снегурочка-черная-толстая.png", "196px", "300px", "-15px", "-24px", "SnowMaiden", "TallBlack", "100px", "150px")
+        +image("Снегурочка-черная-худая.png", "196px", "300px", "-15px", "-24px", "SnowMaiden", "ThinBlack", "100px", "150px")
+
+        // 1
+        +image("Дед-мороз-белый-толстый.png", "176px", "200px", "-583px", "-308px", "FatherFrostTallClothing", "1", "124px", "210px")
+        +image("Дед-мороз-белый-толстый.png", "105px", "200px", "-751px", "-303px", "FatherFrostTallClothing", "2", "153px", "210px")
+        +image("Дед-мороз-белый-толстый.png", "79px", "200px", "-854px", "-303px", "FatherFrostTallClothing", "3", "168px", "203px")
+        +image("Дед-мороз-белый-толстый.png", "158px", "210px", "-934px", "-326px", "FatherFrostTallClothing", "4", "129px", "255px")
+
+        +image("Дед-мороз-белый-худой.png", "176px", "200px", "-583px", "-308px", "FatherFrostThinClothing", "1", "103px", "190px")
+        +image("Дед-мороз-белый-худой.png", "105px", "200px", "-751px", "-303px", "FatherFrostThinClothing", "2", "133px", "180px")
+        +image("Дед-мороз-белый-худой.png", "79px", "200px", "-854px", "-303px", "FatherFrostThinClothing", "3", "158px", "183px")
+        +image("Дед-мороз-белый-худой.png", "158px", "210px", "-934px", "-326px", "FatherFrostThinClothing", "4", "129px", "255px")
+
+        +image("Снегурочка-белая-толстая.png", "126px", "200px", "-643px", "-308px", "SnowMaidenTallClothing", "1",  "154px", "220px")
+        +image("Снегурочка-белая-толстая.png", "112px", "170px", "-758px", "-308px", "SnowMaidenTallClothing", "2",  "157px", "200px")
+        +image("Снегурочка-белая-толстая.png", "131px", "200px", "-884px", "-308px", "SnowMaidenTallClothing", "3",  "154px", "230px")
+        +image("Снегурочка-белая-толстая.png", "116px", "200px", "-643px", "-501px", "SnowMaidenTallClothing", "4",  "140px", "273px")
+        +image("Снегурочка-белая-толстая.png", "122px", "190px", "-758px", "-481px", "SnowMaidenTallClothing", "5",  "144px", "260px")
+
+        +image("Снегурочка-белая-худая.png", "126px", "200px", "-393px", "-468px", "SnowMaidenThinClothing", "1",  "154px", "230px")
+        +image("Снегурочка-белая-худая.png", "112px", "170px", "-508px", "-478px", "SnowMaidenThinClothing", "2",  "144px", "200px")
+        +image("Снегурочка-белая-худая.png", "131px", "200px", "-884px", "-468px", "SnowMaidenThinClothing", "3",  "134px", "240px")
+        +image("Снегурочка-белая-худая.png", "116px", "200px", "-633px", "-468px", "SnowMaidenThinClothing", "4",  "154px", "240px")
+        +image("Снегурочка-белая-худая.png", "122px", "190px", "-778px", "-468px", "SnowMaidenThinClothing", "5",  "150px", "260px")
+
+        // 2
+        +image("Дед-мороз-белый-толстый.png", "56px", "88px", "-23px", "-358px", "FatherFrostBeard", "1", "184px", "166px")
+        +image("Дед-мороз-белый-толстый.png", "56px", "88px", "-85px", "-358px", "FatherFrostBeard", "2", "178px", "166px")
+        +image("Дед-мороз-белый-толстый.png", "56px", "88px", "-140px", "-358px", "FatherFrostBeard", "3", "178px", "166px")
+        +image("Дед-мороз-белый-толстый.png", "56px", "88px", "-189px", "-358px", "FatherFrostBeard", "4", "181px", "149px")
+        +image("Дед-мороз-белый-толстый.png", "56px", "88px", "-239px", "-358px", "FatherFrostBeard", "5", "181px", "146px")
+
+        +image("Снегурочка-белая-худая.png", "64px", "119px", "-515px", "-368px", "SnowMaidenHair", "1", "178px", "105px")
+        +image("Снегурочка-белая-худая.png", "64px", "119px", "-595px", "-368px", "SnowMaidenHair", "2", "178px", "105px")
+        +image("Снегурочка-белая-худая.png", "64px", "119px", "-663px", "-368px", "SnowMaidenHair", "3", "178px", "105px")
+        +image("Снегурочка-белая-худая.png", "74px", "119px", "-729px", "-368px", "SnowMaidenHair", "4", "158px", "115px")
+
+        // 3
+        +image("Дед-мороз-белый-толстый.png", "56px", "298px", "-307px", "-330px", "FatherFrostAccessories", "1", "14px", "166px")
+        +image("Дед-мороз-белый-толстый.png", "86px", "298px", "-367px", "-330px", "FatherFrostAccessories", "2", "384px", "366px")
+        +image("Дед-мороз-белый-толстый.png", "49px", "298px", "-441px", "-330px", "FatherFrostAccessories", "3", "344px", "366px")
+        +image("Дед-мороз-белый-толстый.png", "76px", "298px", "-490px", "-330px", "FatherFrostAccessories", "4", "324px", "346px")
+
+        +image("Снегурочка-белая-худая.png", "64px", "180px", "-45px", "-478px", "SnowMaidenAccessories", "1", "44px", "236px")
+        +image("Снегурочка-белая-худая.png", "64px", "180px", "-113px", "-478px", "SnowMaidenAccessories", "2", "354px", "136px")
+        +image("Снегурочка-белая-худая.png", "84px", "180px", "-193px", "-498px", "SnowMaidenAccessories", "3", "344px", "326px")
+        +image("Снегурочка-белая-худая.png", "64px", "180px", "-279px", "-478px", "SnowMaidenAccessories", "4", "324px", "336px")
+
+        // 4
+        +image("Дед-мороз-белый-толстый.png", "113px", "58px", "-35px", "-448px", "FatherFrostShoes", "1", "157px", "516px")
+        +image("Дед-мороз-белый-толстый.png", "113px", "58px", "-150px", "-448px", "FatherFrostShoes", "2", "147px", "516px")
+        +image("Дед-мороз-белый-толстый.png", "113px", "58px", "-30px", "-498px", "FatherFrostShoes", "3", "164px", "520px")
+        +image("Дед-мороз-белый-толстый.png", "113px", "58px", "-157px", "-498px", "FatherFrostShoes", "4", "164px", "520px")
+
+        +image("Снегурочка-белая-худая.png", "112px", "68px", "-55px", "-408px", "SnowMaidenShoes", "1", "157px", "466px")
+        +image("Снегурочка-белая-худая.png", "112px", "68px", "-169px", "-408px", "SnowMaidenShoes", "2", "157px", "466px")
+        +image("Снегурочка-белая-худая.png", "112px", "68px", "-285px", "-408px", "SnowMaidenShoes", "3", "164px", "461px")
+        +image("Снегурочка-белая-худая.png", "112px", "68px", "-395px", "-408px", "SnowMaidenShoes", "4", "144px", "450px")
+
+        // 5
+        +image("Дед-мороз-белый-толстый.png", "71px", "58px", "-32px", "-546px", "FatherFrostCap", "1", "180px", "10px" )
+        +image("Дед-мороз-белый-толстый.png", "71px", "58px", "-93px", "-546px", "FatherFrostCap", "2", "180px", "10px" )
+        +image("Дед-мороз-белый-толстый.png", "71px", "58px", "-158px", "-546px", "FatherFrostCap", "3", "180px", "10px" )
+        +image("Дед-мороз-белый-толстый.png", "71px", "58px", "-221px", "-546px", "FatherFrostCap", "4", "180px", "10px" )
+
+        +image("Снегурочка-белая-худая.png", "68px", "68px", "-55px", "-338px", "SnowMaidenCap", "1", "180px", "30px")
+        +image("Снегурочка-белая-худая.png", "68px", "68px", "-113px", "-338px", "SnowMaidenCap", "2", "180px", "30px")
+        +image("Снегурочка-белая-худая.png", "68px", "68px", "-172px", "-338px", "SnowMaidenCap", "3", "180px", "30px")
+        +image("Снегурочка-белая-худая.png", "68px", "68px", "-225px", "-338px", "SnowMaidenCap", "4", "180px", "30px")
+      div
+        .container-columns-item-child
+          h4.header.header-thin.header-purple.header-small2 Дополнительные фильтры:
+        .container-columns-item-child
+          +radioText("dop", "1", "Пьяный")
+        .container-columns-item-child
+          +radioText("dop", "2", "Трезвый")
+        .container-columns-item-child
+          +radioText("dop", "3", "Под градусом")
+        .container-columns-item-child
+          +radioText("dop", "4", "Не курящий")
+        .container-columns-item-child
+          +radioText("dop", "5", "болтливый")
+        .container-columns-item-child
+          a(href="./order.html" 
+            data-open="portret"
+            title="Заказать персонажа"
+            class="button button-oval button-oval-purple") Заказать
+    .container-columns-item.container-columns-item-25
+      +filterBlock("FatherFrost", "Tall")
+        .container-columns-item-child
+          h4.header.header-thin.header-purple.header-small2 Одежда
+        .container-columns-item-child.container-columns-item-child-row
+            // 1
+            +radioImage(false, "Дед-мороз-белый-толстый.png", "146px", "200px", "-593px", "-308px", "FatherFrostTallClothing", "1")
+            +radioImage(false, "Дед-мороз-белый-толстый.png", "117px", "200px", "-743px", "-308px", "FatherFrostTallClothing", "2")
+            +radioImage(true, "Дед-мороз-белый-толстый.png", "81px", "200px", "-854px", "-308px", "FatherFrostTallClothing", "3")
+            +radioImage(true, "Дед-мороз-белый-толстый.png", "158px", "210px", "-935px", "-323px", "FatherFrostTallClothing", "4")
+      +filterBlock("FatherFrost", "Thin")
+        .container-columns-item-child
+          h4.header.header-thin.header-purple.header-small2 Одежда
+        .container-columns-item-child.container-columns-item-child-row
+            +radioImage(false, "Дед-мороз-белый-худой.png", "146px", "200px", "-610px", "-338px", "FatherFrostThinClothing", "1")
+            +radioImage(false, "Дед-мороз-белый-худой.png", "117px", "200px", "-750px", "-338px", "FatherFrostThinClothing", "2")
+            +radioImage(true, "Дед-мороз-белый-худой.png", "81px", "200px", "-854px", "-308px", "FatherFrostThinClothing", "3")
+            +radioImage(true, "Дед-мороз-белый-худой.png", "158px", "240px", "-935px", "-303px", "FatherFrostThinClothing", "4")
+      +filterBlock("SnowMaiden", "Tall")
+        .container-columns-item-child
+          h4.header.header-thin.header-purple.header-small2 Одежда
+        .container-columns-item-child.container-columns-item-child-row
+            +radioImage(false, "Снегурочка-белая-толстая.png", "126px", "200px", "-643px", "-308px", "SnowMaidenTallClothing", "1")
+            +radioImage(false, "Снегурочка-белая-толстая.png", "112px", "170px", "-758px", "-308px", "SnowMaidenTallClothing", "2")
+            +radioImage(true, "Снегурочка-белая-толстая.png", "131px", "200px", "-884px", "-308px", "SnowMaidenTallClothing", "3")
+            +radioImage(true, "Снегурочка-белая-толстая.png", "116px", "200px", "-643px", "-501px", "SnowMaidenTallClothing", "4")
+            +radioImage(true, "Снегурочка-белая-толстая.png", "122px", "190px", "-758px", "-481px", "SnowMaidenTallClothing", "5")
+      +filterBlock("SnowMaiden", "Thin")
+        .container-columns-item-child
+          h4.header.header-thin.header-purple.header-small2 Одежда
+        .container-columns-item-child.container-columns-item-child-row
+            +radioImage(false, "Снегурочка-белая-худая.png", "126px", "200px", "-393px", "-468px", "SnowMaidenThinClothing", "1")
+            +radioImage(false, "Снегурочка-белая-худая.png", "112px", "170px", "-508px", "-478px", "SnowMaidenThinClothing", "2")
+            +radioImage(true, "Снегурочка-белая-худая.png", "131px", "200px", "-884px", "-468px", "SnowMaidenThinClothing", "3")
+            +radioImage(true, "Снегурочка-белая-худая.png", "116px", "200px", "-633px", "-468px", "SnowMaidenThinClothing", "4")
+            +radioImage(true, "Снегурочка-белая-худая.png", "122px", "190px", "-778px", "-468px", "SnowMaidenThinClothing", "5")
+      +filterBlock("FatherFrost")
+        .container-columns-item-child
+          h4.header.header-thin.header-purple.header-small2 Борода
+        .container-columns-item-child.container-columns-item-child-row
+            // 2
+            +radioImage(false, "Дед-мороз-белый-толстый.png", "56px", "88px", "-23px", "-358px", "FatherFrostBeard", "1")
+            +radioImage(false, "Дед-мороз-белый-толстый.png", "56px", "88px", "-85px", "-358px", "FatherFrostBeard", "2")
+            +radioImage(false, "Дед-мороз-белый-толстый.png", "56px", "88px", "-140px", "-358px", "FatherFrostBeard", "3")
+            +radioImage(false, "Дед-мороз-белый-толстый.png", "56px", "88px", "-189px", "-358px", "FatherFrostBeard", "4")
+            +radioImage(false, "Дед-мороз-белый-толстый.png", "56px", "88px", "-239px", "-358px", "FatherFrostBeard", "5")
+      +filterBlock("SnowMaiden")
+        .container-columns-item-child
+          h4.header.header-thin.header-purple.header-small2 Причёска
+        .container-columns-item-child.container-columns-item-child-row
+            +radioImage(false, "Снегурочка-белая-худая.png", "64px", "119px", "-515px", "-368px", "SnowMaidenHair", "1")
+            +radioImage(false, "Снегурочка-белая-худая.png", "64px", "119px", "-595px", "-368px", "SnowMaidenHair", "2")
+            +radioImage(false, "Снегурочка-белая-худая.png", "64px", "119px", "-663px", "-368px", "SnowMaidenHair", "3")
+            +radioImage(false, "Снегурочка-белая-худая.png", "74px", "119px", "-729px", "-368px", "SnowMaidenHair", "4")
+      +filterBlock("FatherFrost")
+        .container-columns-item-child
+          h4.header.header-thin.header-purple.header-small2 Аксессуары
+        .container-columns-item-child.container-columns-item-child-row
+            // 3
+            +radioImage(false, "Дед-мороз-белый-толстый.png", "56px", "298px", "-307px", "-330px", "FatherFrostAccessories", "1")
+            +radioImage(true, "Дед-мороз-белый-толстый.png", "86px", "298px", "-367px", "-330px", "FatherFrostAccessories", "2")
+            +radioImage(true, "Дед-мороз-белый-толстый.png", "49px", "298px", "-441px", "-330px", "FatherFrostAccessories", "3")
+            +radioImage(false, "Дед-мороз-белый-толстый.png", "76px", "298px", "-490px", "-330px", "FatherFrostAccessories", "4")
+      +filterBlock("SnowMaiden")
+        .container-columns-item-child
+          h4.header.header-thin.header-purple.header-small2 Аксессуары
+        .container-columns-item-child.container-columns-item-child-row
+            +radioImage(false, "Снегурочка-белая-худая.png", "64px", "180px", "-45px", "-478px", "SnowMaidenAccessories", "1")
+            +radioImage(true, "Снегурочка-белая-худая.png", "64px", "180px", "-113px", "-478px", "SnowMaidenAccessories", "2")
+            +radioImage(true, "Снегурочка-белая-худая.png", "84px", "180px", "-193px", "-498px", "SnowMaidenAccessories", "3")
+            +radioImage(false, "Снегурочка-белая-худая.png", "64px", "180px", "-279px", "-478px", "SnowMaidenAccessories", "4")
+      +filterBlock("FatherFrost")
+        .container-columns-item-child
+          h4.header.header-thin.header-purple.header-small2 Обувь
+        .container-columns-item-child.container-columns-item-child-row
+            // 4
+            +radioImage(false, "Дед-мороз-белый-толстый.png", "113px", "58px", "-35px", "-448px", "FatherFrostShoes", "1")
+            +radioImage(false, "Дед-мороз-белый-толстый.png", "113px", "58px", "-150px", "-448px", "FatherFrostShoes", "2")
+            +radioImage(false, "Дед-мороз-белый-толстый.png", "113px", "58px", "-30px", "-498px", "FatherFrostShoes", "3")
+            +radioImage(false, "Дед-мороз-белый-толстый.png", "113px", "58px", "-157px", "-498px", "FatherFrostShoes", "4")
+      +filterBlock("SnowMaiden")
+        .container-columns-item-child
+          h4.header.header-thin.header-purple.header-small2 Обувь
+        .container-columns-item-child.container-columns-item-child-row
+            +radioImage(false, "Снегурочка-белая-худая.png", "112px", "68px", "-55px", "-408px", "SnowMaidenShoes", "1")
+            +radioImage(false, "Снегурочка-белая-худая.png", "112px", "68px", "-169px", "-408px", "SnowMaidenShoes", "2")
+            +radioImage(false, "Снегурочка-белая-худая.png", "112px", "68px", "-285px", "-408px", "SnowMaidenShoes", "3")
+            +radioImage(false, "Снегурочка-белая-худая.png", "112px", "68px", "-395px", "-408px", "SnowMaidenShoes", "4")
+      +filterBlock("FatherFrost")
+        .container-columns-item-child
+          h4.header.header-thin.header-purple.header-small2 Шапка
+        .container-columns-item-child.container-columns-item-child-row
+            // 5
+            +radioImage(false, "Дед-мороз-белый-толстый.png", "71px", "58px", "-32px", "-546px", "FatherFrostCap", "1")
+            +radioImage(false, "Дед-мороз-белый-толстый.png", "71px", "58px", "-93px", "-546px", "FatherFrostCap", "2")
+            +radioImage(false, "Дед-мороз-белый-толстый.png", "71px", "58px", "-158px", "-546px", "FatherFrostCap", "3")
+            +radioImage(false, "Дед-мороз-белый-толстый.png", "71px", "58px", "-221px", "-546px", "FatherFrostCap", "4")
+      +filterBlock("SnowMaiden")
+        .container-columns-item-child
+          h4.header.header-thin.header-purple.header-small2 Шапка
+        .container-columns-item-child.container-columns-item-child-row
+            +radioImage(false, "Снегурочка-белая-худая.png", "68px", "68px", "-55px", "-338px", "SnowMaidenCap", "1")
+            +radioImage(false, "Снегурочка-белая-худая.png", "68px", "68px", "-113px", "-338px", "SnowMaidenCap", "2")
+            +radioImage(false, "Снегурочка-белая-худая.png", "68px", "68px", "-172px", "-338px", "SnowMaidenCap", "3")
+            +radioImage(false, "Снегурочка-белая-худая.png", "68px", "68px", "-225px", "-338px", "SnowMaidenCap", "4")
+
+    
+.background.background-gradient
+  .container.container-right.container-minHeight
+    .element.element-place2
+      .element.element-place2-spruce
+      .element.element-place2-snow
+    .container-minHeight-item
+      h4.header.header-small.header-white.header-fireWork Дед Мороз и Снегурочка <br /> в Нижнем Новгороде
+    .container-minHeight-item
+      a(href="./order.html" 
+        data-open="portret"
+        title="Заказать персонажа"
+        class="button button-oval button-oval-purple") Заказать
+    .container-minHeight-item
+      p.linkText.linkText-white По всем вопросам:
+      a(href="tel:8(905)664-44-94" 
+        title="Позвонить: 8 (905) 664-44-94"
+        class="link link-white") +7 (905) 664 44 94
+.overlay(data-popup="enter")
+  .popup
+    form(action="#" method="POST")
+      .container-columns-item-child
+        input(type="text" name="login" placeholder="Логин")
+      .container-columns-item-child
+        input(type="password" name="password" placeholder="Пароль")
+      .container-columns-item-child
+        input(type="submit" value="Заказать" class="button button-oval button-oval-purple")
+include template/footer

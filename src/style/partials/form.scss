@@ -1,0 +1,125 @@
+input[type="text"],
+input[type="password"] {
+  border: 1px solid rgba(72, 21, 110, .3);
+  border-radius: 10px;
+  padding: 10px 25px;
+  color: rgba(72, 21, 110, 1);
+  width: 600px;
+}
+
+.label {
+  user-select: none;
+  &-image {
+    display: block;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    transition: all .3s ease;
+  }
+  &-color {
+    display: block;
+    max-width: 100%;
+    width: 70px;
+    height: 70px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 18px;
+    transition: all .3s ease;
+  }
+  &-text {
+    display: block;
+    padding-left: 25px;
+    position: relative;
+    font-size: 20px;
+    color: $colorFormLabelText;
+    line-height: 1.2;
+    &:before {
+      content: '';
+      display: block;
+      border-width: 1px;
+      border-color: $colorFormLabelTextRadio;
+      border-style: solid;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 14px;
+      height: 14px;
+    }
+    &:after {
+      content: '';
+      display: block;
+      border-width: 1px;
+      border-color: $colorFormLabelTextRadio;
+      border-style: solid;
+      border-radius: 50%;
+      background-color: $colorFormLabelTextRadio;
+      position: absolute;
+      left: 3px;
+      top: 7px;
+      width: 8px;
+      height: 8px;
+    }
+    &:before,
+    &:after {
+      transition: opacity .3s ease;
+    }
+  }
+}
+.radio {
+  display: none;
+  &.radio-forImage{
+    &:checked {
+      &+.label {
+        border-color: $colorFormLabelBorder2;
+      }
+    }
+    &:not(:checked) {
+      &+.label {
+        border-color: transparent;
+      }
+    }
+  }
+
+  &.radio-forColor{
+    &:checked {
+      &+.label {
+        border-color: white;
+        box-shadow: 0px 5px 5px 0px $colorFormLabelBorderShadow;
+      }
+    }
+    &:not(:checked) {
+      &+.label {
+        border-color: transparent;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &.radio-forText{
+    &:checked {
+      &+.label {
+        &-text {
+          &:before {
+            opacity: 1;
+          }
+          &:after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    &:not(:checked) {
+      &+.label {
+        &-text {
+          &:before {
+            opacity: 1;
+          }
+          &:after {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}
