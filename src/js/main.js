@@ -1,13 +1,11 @@
-$(document).ready(function(){
-    let tmp = "test babel";
-    
-    $('.spy').addClass("invisible").viewportChecker({
-        classToRemove: 'invisible',
-        offset: 300,
-        invertBottomOffset: false
-    });
+$(document).ready(() => {
+  $('.spy').addClass('invisible').viewportChecker({
+    classToRemove: 'invisible',
+    offset: 300,
+    invertBottomOffset: false,
+  });
 
-    changeBlocks();
+  changeBlocks();
 
     $("[data-click-image]").on("click", function(event){
         var value = $(this).attr("data-click-image");

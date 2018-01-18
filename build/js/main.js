@@ -1,9 +1,7 @@
-"use strict";
+'use strict';
 
 $(document).ready(function () {
-    var tmp = "test babel";
-
-    $('.spy').addClass("invisible").viewportChecker({
+    $('.spy').addClass('invisible').viewportChecker({
         classToRemove: 'invisible',
         offset: 300,
         invertBottomOffset: false
